@@ -1,0 +1,252 @@
+/*
+
+Table of contents
+
+1. CSS reset
+2. Variable declarations
+3. Font styling
+4. General - Elements
+5. General - Classes
+
+*/
+
+/*
+
+1. CSS reset
+
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+
+2. Variable declarations
+
+*/
+
+:root {
+  --surface: #131318;
+  --primary: #bcc2ff;
+  --primary-container: #3b4279;
+  --on-primary-container: #dfe0ff;
+}
+
+/* 
+
+3. Font styling
+
+*/
+
+html {
+  font-size: 62.5%;
+  font-family: roboto, sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*
+
+4. General - Elements
+
+*/
+
+body {
+  background-color: var(--surface);
+}
+
+header {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  max-width: 120rem;
+}
+
+/*
+
+5. General - Classes
+
+*/
+
+.logoContainer {
+  display: flex;
+  align-items: end;
+  margin: 1rem 0 1rem 4rem;
+  gap: 0.6rem;
+}
+
+.logoName {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 4rem;
+  font-size: 1.8rem;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeHeroContainer {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  align-items: center;
+  max-height: 40rem;
+}
+
+.homeHero {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
