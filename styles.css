@@ -318,3 +318,38 @@ nav {
   max-height: 100%;
   object-fit: contain;
 }
+
+/*
+
+6. Media queries
+
+*/
+
+@media screen and (min-width: 700px) {
+  .navContainer {
+    order: 2;
+  }
+
+  .logoContainer {
+    order: 1;
+  }
+
+  nav {
+    display: block;
+    position: unset;
+    transform: unset;
+    background-color: unset;
+  }
+
+  .navCloseButton,
+  .scrim.show,
+  .toggleMobileNavVisibilityButton {
+    display: none;
+  }
+
+  .navItems {
+    flex-direction: row;
+    font-size: 1.8rem;
+    padding: 0;
+  }
+}
