@@ -209,6 +209,17 @@ main {
   max-width: 120rem;
 }
 
+nav {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 4rem);
+  display: flex;
+  background-color: black;
+  z-index: 20;
+}
+
 /*
 
 5. General - Classes
