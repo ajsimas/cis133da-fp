@@ -229,8 +229,8 @@ nav {
 .logoContainer {
   display: flex;
   align-items: end;
-  margin: 1rem 0 1rem 4rem;
   gap: 0.6rem;
+  order: 2;
 }
 
 .logoName {
@@ -240,6 +240,10 @@ nav {
 
 .logo {
   width: 4rem;
+}
+
+.navContainer {
+  order: 1;
 }
 
 .navItems {
