@@ -246,6 +246,16 @@ nav {
   order: 1;
 }
 
+.toggleMobileNavVisibilityButton {
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.toggleMobileNavVisibilityButton:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.2rem);
+}
+
 .navItems {
   display: flex;
   justify-content: space-between;
