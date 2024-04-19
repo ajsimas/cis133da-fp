@@ -98,20 +98,28 @@
       </div>
       <div class="copyright">Copyright &copy; Avid IT LLC</div>
     </footer>
+    <script>
+      const toggleMobileNavVisibilityButton = document.querySelector(
+        ".toggleMobileNavVisibilityButton"
+      );
+      const nav = document.querySelector("nav");
+      const scrim = document.querySelector(".scrim");
+      const navCloseButton = document.querySelector(".navCloseButton");
 
-    toggleMobileNavVisibilityButton.addEventListener("click", () => {
-      nav.classList.toggle("showMobileNav");
-      scrim.classList.toggle("show");
-    });
+      toggleMobileNavVisibilityButton.addEventListener("click", () => {
+        nav.classList.toggle("showMobileNav");
+        scrim.classList.toggle("show");
+      });
 
-    scrim.addEventListener("click", () => {
-      nav.classList.remove("showMobileNav");
-      scrim.classList.remove("show");
-    });
+      scrim.addEventListener("click", () => {
+        nav.classList.remove("showMobileNav");
+        scrim.classList.remove("show");
+      });
 
-    navCloseButton.addEventListener("click", () => {
-      nav.classList.remove("showMobileNav");
-      scrim.classList.remove("show");
-    });
-  </script>
+      navCloseButton.addEventListener("click", () => {
+        nav.classList.remove("showMobileNav");
+        scrim.classList.remove("show");
+      });
+    </script>
+  </body>
 </html>
