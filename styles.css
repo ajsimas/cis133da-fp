@@ -345,12 +345,17 @@ footer {
 .footerCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   padding: 2rem;
   background-color: var(--surface-container);
   border-radius: 1rem;
   width: 100%;
+}
+
+.footerCard p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.005rem;
 }
 
 .footerCardHeading {
@@ -363,7 +368,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  align-items: center;
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .footerNav ul li:hover {
@@ -406,5 +412,12 @@ footer {
     flex-direction: row;
     font-size: 1.8rem;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footerCardContainer {
+    flex-direction: row;
+    gap: 5rem;
   }
 }
