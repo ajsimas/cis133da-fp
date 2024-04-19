@@ -212,12 +212,12 @@ main {
 }
 
 nav {
+  display: none;
   position: absolute;
   top: 4rem;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 4rem);
-  display: flex;
   background-color: black;
   z-index: 20;
 }
@@ -257,6 +257,11 @@ nav {
   background-color: rgba(0, 0, 0, 0.2);
   transform: translateY(-0.2rem);
 }
+
+.showMobileNav {
+  display: flex;
+}
+
 
 .navItems {
   display: flex;
