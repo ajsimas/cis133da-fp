@@ -262,6 +262,11 @@ nav {
   display: flex;
 }
 
+.navCloseButton {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
 
 .navItems {
   display: flex;
