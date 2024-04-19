@@ -219,8 +219,9 @@ nav {
   top: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 4rem);
-  background-color: black;
+  background-color: var(--surface-bright);
+  color: var(--on-surface);
+  border-radius: 1rem;
   z-index: 20;
 }
 
