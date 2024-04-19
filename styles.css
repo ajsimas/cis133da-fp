@@ -270,13 +270,15 @@ nav {
 }
 
 .navItems {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  list-style: none;
   gap: 2rem;
-  margin-right: 4rem;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
+  list-style: none;
+  padding: 4rem 0 4rem 0;
+}
 }
 
 .mainContainer {
