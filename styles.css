@@ -251,6 +251,7 @@ nav {
 .toggleMobileNavVisibilityButton {
   border-radius: 100%;
   padding: 0.5rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .toggleMobileNavVisibilityButton:hover {
