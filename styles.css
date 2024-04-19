@@ -162,6 +162,8 @@ a {
 
 :root {
   --surface: #131318;
+  --surface-bright: #39393f;
+  --on-surface: #e4e1e9;
   --primary: #bcc2ff;
   --primary-container: #3b4279;
   --on-primary-container: #dfe0ff;
