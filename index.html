@@ -28,7 +28,7 @@
           <img src="/assets/menu.svg" alt="nav show button icon" />
         </button>
         <div class="scrim"></div>
-        <nav class="hideNav">
+        <nav>
           <button class="navCloseButton">
             <img src="/assets/close.svg" alt="x icon" />
           </button>
@@ -64,22 +64,22 @@
     const toggleMobileNavVisibilityButton = document.querySelector(
       ".toggleMobileNavVisibilityButton"
     );
-    const hideNav = document.querySelector(".hideNav");
+    const nav = document.querySelector("nav");
     const scrim = document.querySelector(".scrim");
     const navCloseButton = document.querySelector(".navCloseButton");
 
     toggleMobileNavVisibilityButton.addEventListener("click", () => {
-      hideNav.classList.toggle("showNav");
+      nav.classList.toggle("showMobileNav");
       scrim.classList.toggle("show");
     });
 
     scrim.addEventListener("click", () => {
-      hideNav.classList.remove("showNav");
+      nav.classList.remove("showMobileNav");
       scrim.classList.remove("show");
     });
 
     navCloseButton.addEventListener("click", () => {
-      hideNav.classList.remove("showNav");
+      nav.classList.remove("showMobileNav");
       scrim.classList.remove("show");
     });
   </script>
