@@ -270,7 +270,7 @@ nav {
 .navCloseButton {
   position: absolute;
   top: 1.2rem;
-  right: 1rem;
+  right: 0.5rem;
 }
 
 .navItems {
