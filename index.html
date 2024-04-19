@@ -58,15 +58,46 @@
     <section></section>
     <section></section>
     <!--REQUIRED: footer semantic element - 2024-04-08-->
-    <footer></footer>
-  </body>
-  <script>
-    const toggleMobileNavVisibilityButton = document.querySelector(
-      ".toggleMobileNavVisibilityButton"
-    );
-    const nav = document.querySelector("nav");
-    const scrim = document.querySelector(".scrim");
-    const navCloseButton = document.querySelector(".navCloseButton");
+    <footer>
+      <div class="footerColumnContainer">
+        <div class="footerCard">
+          <div class="footerCardHeading">Services</div>
+          <ul class="footerUl">
+            <li>Computer repair</li>
+            <li>Server backups</li>
+            <li>Endpoint Detection & Response</li>
+            <li>Vulnerability Management</li>
+            <li>Network Operations Center</li>
+            <li>Virtual CISO</li>
+          </ul>
+        </div>
+        <div class="footerCard">
+          <div class="footerCardHeading">Areas Served</div>
+          <ul class="footerUl">
+            <li>Phoenix</li>
+            <li>Scottsdale</li>
+            <li>Tempe</li>
+            <li>Mesa</li>
+            <li>Gilbert</li>
+            <li>Chandler</li>
+          </ul>
+        </div>
+        <div class="footerCard">
+          <div class="footerCardHeading">Site Navigation</div>
+          <nav class="footerNav">
+            <!--REQUIRED: ul list element - 2024-04-08-->
+            <ul class="footerUl">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="/testimonials.html">Testimonials</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="copyright">Copyright &copy; Avid IT LLC</div>
+    </footer>
 
     toggleMobileNavVisibilityButton.addEventListener("click", () => {
       nav.classList.toggle("showMobileNav");
