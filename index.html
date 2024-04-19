@@ -23,16 +23,25 @@
         <div class="logoName">Avid IT</div>
       </div>
       <!--REQUIRED: nav semantic element - 2024-04-08-->
-      <nav>
-        <!--REQUIRED: ul list element - 2024-04-08-->
-        <ul class="navItems">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/testimonials.html">Testimonials</a></li>
-        </ul>
-      </nav>
+      <div class="navContainer">
+        <button class="toggleMobileNavVisibilityButton" type="button">
+          <img src="/assets/menu.svg" alt="nav show button icon" />
+        </button>
+        <div class="scrim"></div>
+        <nav class="hideNav">
+          <button class="navCloseButton">
+            <img src="/assets/close.svg" alt="x icon" />
+          </button>
+          <!--REQUIRED: ul list element - 2024-04-08-->
+          <ul class="navItems">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!--REQUIRED: main semantic element - 2024-04-08-->
     <div class="mainContainer">
@@ -51,4 +60,27 @@
     <!--REQUIRED: footer semantic element - 2024-04-08-->
     <footer></footer>
   </body>
+  <script>
+    const toggleMobileNavVisibilityButton = document.querySelector(
+      ".toggleMobileNavVisibilityButton"
+    );
+    const hideNav = document.querySelector(".hideNav");
+    const scrim = document.querySelector(".scrim");
+    const navCloseButton = document.querySelector(".navCloseButton");
+
+    toggleMobileNavVisibilityButton.addEventListener("click", () => {
+      hideNav.classList.toggle("showNav");
+      scrim.classList.toggle("show");
+    });
+
+    scrim.addEventListener("click", () => {
+      hideNav.classList.remove("showNav");
+      scrim.classList.remove("show");
+    });
+
+    navCloseButton.addEventListener("click", () => {
+      hideNav.classList.remove("showNav");
+      scrim.classList.remove("show");
+    });
+  </script>
 </html>
