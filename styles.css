@@ -406,6 +406,7 @@ footer {
     transition: transform 0.2s ease-in-out;
   }
 
+  /*REQUIRED: dynamic styling of navigation, 2024-04-23*/
   .headerNav li:hover {
     text-decoration: underline;
     transform: translateY(-0.1rem);
