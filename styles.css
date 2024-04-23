@@ -402,6 +402,15 @@ footer {
     background-color: unset;
   }
 
+  .headerNav li {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .headerNav li:hover {
+    text-decoration: underline;
+    transform: translateY(-0.1rem);
+  }
+
   .navCloseButton,
   .scrim.show,
   .toggleMobileNavVisibilityButton {
