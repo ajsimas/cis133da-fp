@@ -386,6 +386,7 @@ footer {
 
 */
 
+/*REQUIRED: media query 1 of 3, 2024-04-23*/
 @media screen and (min-width: 600px) {
   .navContainer {
     order: 2;
@@ -425,6 +426,7 @@ footer {
   }
 }
 
+/*REQUIRED: media query 2 of 3, 2024-04-23*/
 @media screen and (min-width: 1000px) {
   .footerCardContainer {
     flex-direction: row;
