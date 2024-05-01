@@ -275,6 +275,10 @@ footer {
   gap: 3rem;
 }
 
+strong {
+  font-weight: bold;
+}
+
 /*
 
 5. General - Classes
@@ -490,6 +494,7 @@ footer {
 
 .contactFormInput {
   background-color: var(--surface);
+  /*REQUIRED: border, 2024-05-01*/
   border: 1px solid var(--on-surface);
   color: var(--on-surface);
   font-size: 1.8rem;
