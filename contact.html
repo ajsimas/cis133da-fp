@@ -59,7 +59,106 @@
             class="homeHero"
           />
         </div>
-        <h1 style="color: white">Placeholder - Contact</h1>
+        <h1>Contact Us</h1>
+        <div class="contactFormContainer">
+          <!--REQUIRED: form element, 2024-04-30-->
+          <form
+            class="contactForm"
+            action="/contact"
+            method="post"
+            autocomplete="off"
+          >
+            <div class="contactFormElementContainer">
+              <!--REQUIRED: input element 1 of 3, 2024-04-30-->
+              <!--REQUIRED: required, 2024-04-30-->
+              <input
+                class="contactFormInput"
+                type="text"
+                id="fname"
+                placeholder="fname"
+                required
+              />
+              <label class="contactFormLabel" for="fname">First name</label>
+            </div>
+            <div class="contactFormElementContainer">
+              <!--REQUIRED: input element 2 of 3, 2024-04-30-->
+              <input
+                class="contactFormInput"
+                type="text"
+                id="lname"
+                placeholder="lname"
+                required
+              />
+              <label class="contactFormLabel" for="lname">Last name</label>
+            </div>
+            <div class="contactFormElementContainer">
+              <!--REQUIRED: input element 3 of 3, 2024-04-30-->
+              <input
+                class="contactFormInput"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email"
+                required
+              />
+              <label class="contactFormLabel" for="email">Email</label>
+            </div>
+            <div class="contactFormElementContainer contactFormSelectElement">
+              <label class="contactFormSelectLabel" for="service"
+                >Select Service:</label
+              >
+              <!--REQUIRED: select OR datalist option element, 2024-04-30-->
+              <select
+                id="service"
+                name="service"
+                class="contactFormInput"
+                required
+              >
+                <option value="">Please choose an option</option>
+                <option value="consultation">Consultation</option>
+                <option value="support">IT Support</option>
+                <option value="repair">Repair Services</option>
+              </select>
+            </div>
+            <div class="contactFormElementContainer">
+              <textarea
+                class="contactFormInput"
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+                placeholder="comments"
+              ></textarea>
+              <label class="contactFormLabel" for="comments">Comments</label>
+            </div>
+            <div class="contactFormTosContainer">
+              <!--REQUIRED: radio button OR checkbox, 2024-04-30-->
+              <input type="checkbox" id="tos" name="tos" required />
+              <label for="tos">I agree to Avid IT's terms of service</label>
+            </div>
+            <div class="contactFormButtonContainer">
+              <!--REQUIRED: submit button, 2024-04-30-->
+              <button class="contactFormButton" type="submit">Submit</button>
+              <!--REQUIRED: reset button, 2024-04-30-->
+              <button class="contactFormButton" type="reset">Reset</button>
+            </div>
+          </form>
+          <div class="contactFormTextContainer">
+            <h2>We're Here to Help!</h2>
+            <p>
+              At Avid IT, we understand the importance of reliable IT solutions
+              and are dedicated to providing the support your business needs to
+              succeed. Whether you have questions about our services, need
+              assistance with your IT infrastructure, or simply want to hear
+              more about how we can help your business thrive, we're here for
+              you. Please fill out the form below with your details and any
+              comments or inquiries you may have. Our team is committed to
+              responding as swiftly as possible, and we look forward to
+              assisting you! Avid IT — Empowering your business with superior IT
+              solutions.
+            </p>
+          </div>
+        </div>
       </main>
     </div>
     <section></section>

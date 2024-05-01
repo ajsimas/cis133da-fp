@@ -166,8 +166,31 @@ a {
   --surface-container: #1f1f25;
   --on-surface: #e4e1e9;
   --primary: #bcc2ff;
+  --on-primary: #242b61;
   --primary-container: #3b4279;
   --on-primary-container: #dfe0ff;
+  --error: #ba1a1a;
+}
+
+/*
+
+2.5 Reset form autocomplete styling
+
+*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid var(--on-surface);
+  -webkit-text-fill-color: var(--on-surface);
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 /* 
@@ -178,6 +201,10 @@ a {
 
 html {
   font-size: 62.5%;
+  font-family: roboto, sans-serif;
+}
+
+textarea {
   font-family: roboto, sans-serif;
 }
 
@@ -210,6 +237,7 @@ header {
   padding: 0.6rem 2rem 0.6rem 2rem;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 main {
@@ -220,6 +248,9 @@ h1 {
   font-size: 5.7rem;
   line-height: 6.4rem;
   letter-spacing: -0.25rem;
+  color: var(--on-surface);
+  margin-top: 3rem;
+  padding-left: 2rem;
 }
 
 .headerNav {
@@ -416,6 +447,109 @@ footer {
   letter-spacing: 0.05rem;
 }
 
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 5rem;
+}
+
+.contactForm {
+  flex: 2;
+}
+
+.contactFormElementContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.contactFormLabel {
+  position: absolute;
+  color: var(--on-surface);
+  margin-right: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+  top: 1.4rem;
+  left: 1rem;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+.contactFormSelectLabel {
+  display: none;
+}
+
+.contactFormElementContainer:active .contactFormLabel,
+.contactFormElementContainer:focus-within .contactFormLabel,
+.contactFormInput:not(:placeholder-shown) + .contactFormLabel {
+  top: -2rem;
+  font-size: 1.6rem;
+}
+
+.contactFormInput {
+  background-color: var(--surface);
+  border: 1px solid var(--on-surface);
+  color: var(--on-surface);
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  padding: 1rem 1.4rem 1rem 1.4rem;
+}
+
+.contactFormInput::placeholder {
+  color: var(--surface);
+}
+
+.contactFormInput:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
+
+.contactFormTosContainer {
+  color: var(--on-surface);
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.contactFormButtonContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.contactFormButton {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.4rem;
+  font-size: 2.2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contactFormButton:hover {
+  background-color: var(--on-primary);
+  transform: translateY(-0.2rem);
+}
+
+.contactFormTextContainer {
+  flex: 1;
+  color: var(--on-surface);
+}
+
+.contactFormTextContainer h2 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  letter-spacing: 0rem;
+  margin-bottom: 1rem;
+}
+
+.contactFormTextContainer p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+}
+
 /*
 
 6. Media queries
@@ -484,5 +618,10 @@ footer {
 
   .paragraphLeft img {
     order: 2;
+  }
+
+  .contactFormContainer {
+    flex-direction: row;
+    gap: 5rem;
   }
 }
