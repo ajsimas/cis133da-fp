@@ -610,6 +610,11 @@ blockquote {
   margin-top: 2rem;
 }
 
+.videoContainer {
+  width: 100%;
+  height: 70rem;
+}
+
 /*
 
 6. Media queries
