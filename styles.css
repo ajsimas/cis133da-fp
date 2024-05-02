@@ -706,11 +706,24 @@ figcaption {
     color: black;
     background-color: white;
     font-size: 1.6rem;
-    line-height: 1.6;
     background: transparent;
     border: none;
+    box-shadow: none;
+  }
+
+  header,
+  footer,
+  .navContainer,
+  .scrim,
+  .contactFormContainer {
+    display: none;
+  }
+
+  body,
+  main,
+  .mainContainer {
     width: 100%;
-    max-width: none;
-    padding: 1cm;
+    padding: 0;
+    margin: 0;
   }
 }
