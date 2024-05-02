@@ -279,6 +279,14 @@ strong {
   font-weight: bold;
 }
 
+blockquote {
+  font-style: italic;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.05rem;
+  color: var(--on-surface);
+}
+
 /*
 
 5. General - Classes
@@ -553,6 +561,44 @@ strong {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: 0.05rem;
+}
+
+.testimonialContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.testimonialContainer blockquote {
+  max-width: 35rem;
+  min-width: 28rem;
+}
+
+.testimonialContainer blockquote p {
+  background-color: var(--primary-container);
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonialContainer blockquote p::before,
+.testimonialContainer blockquote p::after {
+  font-size: 3rem;
+  color: var(--on-primary-container);
+}
+
+.testimonialContainer blockquote p::before {
+  content: "\201c";
+}
+
+.testimonialContainer blockquote p::after {
+  content: "\201d";
 }
 
 /*
