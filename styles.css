@@ -613,6 +613,7 @@ blockquote {
 .videoContainer {
   width: 100%;
   height: 70rem;
+  padding: 0 2rem 0 2rem;
 }
 
 /*
