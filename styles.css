@@ -601,6 +601,15 @@ blockquote {
   content: "\201d";
 }
 
+.aboutUsPhoto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  max-height: 50rem;
+  margin-top: 2rem;
+}
+
 /*
 
 6. Media queries
