@@ -287,6 +287,14 @@ blockquote {
   color: var(--on-surface);
 }
 
+figcaption {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--on-surface);
+  text-align: center;
+}
+
 /*
 
 5. General - Classes
@@ -689,5 +697,20 @@ blockquote {
   .contactFormContainer {
     flex-direction: row;
     gap: 5rem;
+  }
+}
+
+/*REQUIRED: media query 3 of 3, 2024-05-01*/
+@media print {
+  * {
+    color: black;
+    background-color: white;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background: transparent;
+    border: none;
+    width: 100%;
+    max-width: none;
+    padding: 1cm;
   }
 }
