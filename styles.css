@@ -295,6 +295,25 @@ figcaption {
   text-align: center;
 }
 
+main {
+  color: var(--on-surface);
+}
+
+main h2 {
+  font-size: 3rem;
+  line-height: 4.4rem;
+  letter-spacing: 0rem;
+  padding: 0 2rem 0 2rem;
+}
+
+main p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+  padding: 0 2rem 0 2rem;
+  margin-bottom: 4rem;
+}
+
 /*
 
 5. General - Classes
@@ -622,6 +641,16 @@ figcaption {
   width: 100%;
   height: 70rem;
   padding: 0 2rem 0 2rem;
+}
+
+.aboutParagraph {
+  font-size: 2.2rem;
+  color: var(--on-surface);
+  max-width: 60rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 /*
