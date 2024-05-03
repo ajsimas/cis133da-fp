@@ -1,12 +1,14 @@
 /*
 
-Table of contents
+Table of Contents
 
-1. CSS reset
-2. Variable declarations
-3. Font styling
-4. General - Elements
-5. General - Classes
+1. CSS Reset
+2. Variable Declarations
+3. Reset Form Autocomplete Styling
+4. Font Styling
+5. General - Elements
+6. General - Classes
+7. Media Queries
 
 */
 
@@ -174,7 +176,7 @@ a {
 
 /*
 
-2.5 Reset form autocomplete styling
+3. Reset form autocomplete styling
 
 */
 
@@ -195,7 +197,7 @@ select:-webkit-autofill:focus {
 
 /* 
 
-3. Font styling
+4. Font styling
 
 */
 
@@ -214,7 +216,7 @@ body {
 
 /*
 
-4. General - Elements
+5. General - Elements
 
 */
 
@@ -316,7 +318,7 @@ main p {
 
 /*
 
-5. General - Classes
+6. General - Classes
 
 */
 
@@ -655,7 +657,7 @@ main p {
 
 /*
 
-6. Media queries
+7. Media queries
 
 */
 
